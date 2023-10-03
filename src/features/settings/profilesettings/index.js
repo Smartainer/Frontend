@@ -15,9 +15,7 @@ function ProfileSettings() {
     dispatch(showNotification({ message: "Profile Updated", status: 1 }));
   };
 
-  const updateFormValue = ({ updateType, value }) => {
-    console.log(updateType);
-  };
+  const updateFormValue = ({ updateType, value }) => {};
 
   return (
     <>

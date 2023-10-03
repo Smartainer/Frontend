@@ -77,7 +77,7 @@ function Containers() {
         title: "Show " + container.name + " Container Analysis",
         size: "lg",
         bodyType: MODAL_BODY_TYPES.ANALYSIS,
-        extraObject: { container },
+        extraObject: container,
       })
     );
   };

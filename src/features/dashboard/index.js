@@ -33,13 +33,12 @@ function Dashboard({ container_id }) {
   };
   const [container, setContainer] = useState(containerr);
 
-  useEffect(async () => {
-    console.log("왜?");
-    await fastapi("get", "/api/container/detail/" + container_id).then(
-      (data) => {
-        setContainer(data);
-      }
-    );
+  useEffect(() => {
+    fastapi("get", "/api/container/detail/" + container_id).then((data) => {
+      setContainer(data);
+      console.log("container");
+      console.log(container);
+    });
   }, []);
 
   const statsData = [

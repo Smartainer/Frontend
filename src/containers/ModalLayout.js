@@ -36,8 +36,8 @@ function ModalLayout() {
             {
               [MODAL_BODY_TYPES.CONTAINER_ADD_NEW]: (
                 <AddContainerModalBody
-                  closeModal={close}
                   extraObject={extraObject}
+                  closeModal={close}
                 />
               ),
               [MODAL_BODY_TYPES.CONFIRMATION]: (

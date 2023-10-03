@@ -5,7 +5,7 @@ const fastapi = async (method, url, params) => {
   if ((method === "get" || method == "delete") && params != null) {
     _url += "/" + params.id;
   }
-  console.log("들어감");
+
   let response;
   if (method == "get") {
     response = await axios.get(_url);
@@ -14,7 +14,6 @@ const fastapi = async (method, url, params) => {
   } else if (method == "delete") {
     response = await axios.delete(_url);
   }
-  console.log("나옴");
 
   let responseOK =
     response && response.status === 200 && response.statusText === "OK";

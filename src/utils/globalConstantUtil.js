@@ -3,6 +3,7 @@ module.exports = Object.freeze({
     USER_DETAIL: "USER_DETAIL",
     CONTAINER_ADD_NEW: "CONTAINER_ADD_NEW",
     CONFIRMATION: "CONFIRMATION",
+    ANALYSIS: "ANALYSIS",
     DEFAULT: "",
   },
 
@@ -12,6 +13,6 @@ module.exports = Object.freeze({
   },
 
   CONFIRMATION_MODAL_CLOSE_TYPES: {
-    CONTAINER_DELETE: "LEACONTAINER_DELETE",
+    CONTAINER_DELETE: "CONTAINER_DELETE",
   },
 });

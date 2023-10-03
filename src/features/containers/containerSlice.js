@@ -5,13 +5,8 @@ import fastapi from "../../lib/api";
 export const getContainerContent = createAsyncThunk(
   "/containers/content",
   async () => {
-    console.log("here");
     const response = await fastapi("get", "/api/container/list");
-    console.log("response");
-    console.log(response);
     let lastIdx = await fastapi("get", "/api/container/lastIndex");
-
-    console.log(lastIdx);
     return { response, lastIdx };
   }
 );
